@@ -1,0 +1,29 @@
+@startuml
+
+class Image{
++ {static} <T> load(fileName : String, type : Class<? extends T>) : T
++ {abstract} getWidth() : int
++ {abstract} getHeight() : int
++ save (fileName : String) : void
+}
+
+class RgbImage{
++ {static} load(fileName : String) : RgbImage
++ getR() : int
++ getG() : int
++ getB() : int
++ setR(value : int) : void
++ setG(value : int) : void
++ setB(value : int) : void
+}
+
+class GrayscaleImage{
++ {static} load(fileName : String) : GrayscaleImage
++ getColor() : int
++ setColor(value : int) : void
+}
+
+Image <|-- RgbImage
+Image <|-- GrayscaleImage
+
+@enduml

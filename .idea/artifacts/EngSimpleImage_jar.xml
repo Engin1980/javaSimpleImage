@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EngSimpleImage:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EngSimpleImage_jar</output-path>
+    <root id="archive" name="EngSimpleImage.jar">
+      <element id="module-output" name="EngSimpleImage" />
+    </root>
+  </artifact>
+</component>
