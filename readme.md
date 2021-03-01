@@ -9,6 +9,8 @@ All classes are in package `eng.simpleImage`. The package contains of the follow
 * `ColorImage` - represents color (RGB) image
 * `ImageProcessingException` - represents exception thrown on any issue
 
+![Class diagram](src/eng/simpleImage/SimpleImage.png)
+
 # Basic Usage
 
 ## New image
