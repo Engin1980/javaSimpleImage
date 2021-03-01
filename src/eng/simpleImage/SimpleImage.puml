@@ -9,9 +9,11 @@ class Image{
 
 class RgbImage{
 + {static} load(fileName : String) : RgbImage
++ getA() : int
 + getR() : int
 + getG() : int
 + getB() : int
++ setA(value : int) : void
 + setR(value : int) : void
 + setG(value : int) : void
 + setB(value : int) : void

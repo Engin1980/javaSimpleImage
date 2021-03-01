@@ -50,6 +50,19 @@ public class RgbImage extends Image {
     this.width = width;
   }
 
+  public int getA(int x, int y) {
+    int index = this.getIndex(x, y);
+    return this.a[index];
+  }
+
+  public int getA(int x, int y, boolean lenient) {
+    if (lenient) {
+      x = ensureValueInWidth(x);
+      y = ensureValueInHeight(y);
+    }
+    return getA(x, y);
+  }
+
   public int getB(int x, int y) {
     int index = this.getIndex(x, y);
     return this.b[index];
@@ -101,6 +114,12 @@ public class RgbImage extends Image {
     val = ensureValueInColorRange(val);
     int index = getIndex(x, y);
     this.b[index] = val;
+  }
+
+  public void setA(int x, int y, int val) {
+    val = ensureValueInColorRange(val);
+    int index = getIndex(x, y);
+    this.a[index] = val;
   }
 
   public void setG(int x, int y, int val) {

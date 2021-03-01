@@ -50,19 +50,6 @@ RgbImage img = Image.load("C:\temp.jpg", RgbImage.class);
 | `int getWidth()` | Returns width as int | 
 | `int getHeight()` | Returns height as int | 
 
-### RgbImage functions
-RGB image is representing the images a red-green-blue channel. Every channel have value in range 0-255.
-
-| Function | Explanation | 
-| --- | --- | 
-| `int getR(x, y)` | Returns RED color (RGB only) | 
-| `int getG(x, y)` | Returns GREEN color (RGB only) | 
-| `int getG(x, y)` | Returns GREEN color (RGB only) | 
-| -
-| `void setR(x, y)` | Sets RED color (RGB only) | 
-| `void setG(x, y)` | Sets GREEN color (RGB only) | 
-| `void setG(x, y)` | Sets GREEN color (RGB only) | 
-
 ### Grayscale image functions
 Grayscale image has at every pixel only gray scale value (range 0-255, 0 = black, 255 = white).
 
@@ -71,6 +58,23 @@ Grayscale image has at every pixel only gray scale value (range 0-255, 0 = black
 | int getColor(x, y) | Returns color | 
 | -
 | void setColor(x, y) | Sets color | 
+
+### RgbImage functions
+RGB image is representing the images a red-green-blue channel. Every channel have value in range 0-255 (0 = minimal color intensity, 1 = maximal color intensity).
+
+| Function | Explanation | 
+| --- | --- | 
+| `int getA(x, y)` | Returns alpha - transparency | 
+| `int getR(x, y)` | Returns RED color | 
+| `int getG(x, y)` | Returns GREEN color | 
+| `int getB(x, y)` | Returns BLUE color | 
+| -
+| `void setA(x, y)` | Sets alpha- transparency | 
+| `void setR(x, y)` | Sets RED color | 
+| `void setG(x, y)` | Sets GREEN color | 
+| `void setB(x, y)` | Sets BLUE color | 
+
+
 
 ### Some examples
 
